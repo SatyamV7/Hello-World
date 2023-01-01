@@ -1,24 +1,25 @@
+@import url(/src/fonts.css);
+
 * {
     margin: 0px;
     padding: 0px;
     cursor: url(/assets/cursor/mouse_cursor.png), default !important;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 html {
+    overflow: overlay;
     height: 100%;
     width: 100%;
 }
 
 body {
-    height: 100vh;
     width: 100%;
-    overflow: hidden;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: SPOTNIK;
     font-size: 32px;
-}
-
-::selection {
-    background: none;
 }
